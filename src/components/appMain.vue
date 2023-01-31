@@ -1,77 +1,92 @@
 <script>
 import socialProof from './socialProof.vue'
 import generalCard from './generalCard.vue'
+import generalButton from './generalButton.vue'
 import { store } from '../assets/data/store'
 export default {
     name: 'appMain',
-    components: { socialProof, generalCard },
+    components: { socialProof, generalCard, generalButton },
     data() {
         return {
             store
         }
-
     }
+
 
 }
 </script>
 
 <template>
+
     <main>
+        <div class="core-container">
+            <!-- social proof section -->
 
-        <!-- social proof section -->
-
-        <section class="row mx-auto mt-5 social-proof">
-            <socialProof v-for="sp in this.store.proofList" :key="sp.value" :title="sp.title" :value="sp.value">
-            </socialProof>
-        </section>
-        <section class="row ms-auto about">
-            <div class="col-6 title-section">
-                <h5>ABOUT ME</h5>
-                <p>How to be an Alpha Male:"The 15 Habits of True Alphas"</p>
-            </div>
-            <div class="col-6 info-section">
-                <h3>Want to learn how to be an alpha male? How to be more masculine?
-                    How to be the man you've always wanted to be?
-                </h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel laudantium hic incidunt tempore.
-                    Distinctio non delectus quas accusamus! Optio quam cumque repellendus. Quas dolorem magnam facere
-                    dignissimos, cum quis quos?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque veniam nostrum odio dolore ratione
-                    dolorum placeat vitae ea vel? Magnam laudantium esse mollitia at doloribus cum ad, error veniam aut!
-                </p>
-            </div>
-        </section>
-
-        <!-- about section -->
-
-        <section class='about-jumbotron row'>
-            <div class="col-7 jumbo-video">
-                <img src="../assets/img/icon-youtube-play.png" alt="icon-youtube-play.png">
-            </div>
-            <div class="col-5 jumbo-quote ps-5 pt-5">
-                <p>"Every morning you have two choices: continue to sleep with your dreams, or wake up
-                    and chase them."</p>
-                <img src="../assets/img/home-movation-shape-01.png" alt="home-movation-shape-01.png" class="mb-3">
-                <h3 class="mb-4">Kaixa Stark</h3>
-                <h5>WINGMAN</h5>
-            </div>
-        </section>
-
-        <!-- Shop section -->
-
-        <section class="shop-courses">
-            <h6 class="text-center">BEGIN YOUR JOURNEY AT MAXCOACH</h6>
-            <h1 class="text-center mb-3">Latest <span>Online Courses</span></h1>
-            <div class="row">
-                <div class="col-4" v-for="course in this.store.courses" :key="course.lessons">
-                    <generalCard :image="course.image" :cost="course.cost" :title="course.title"
-                        :sheetPic="course.sheetPic" :lessons="course.lessons" :userPic="course.userPic"
-                        :students="course.students"></generalCard>
+            <section class="row mx-auto mt-5 social-proof">
+                <socialProof v-for="sp in this.store.proofList" :key="sp.value" :title="sp.title" :value="sp.value">
+                </socialProof>
+            </section>
+            <section class="row ms-auto about">
+                <div class="col-6 title-section">
+                    <h5>ABOUT ME</h5>
+                    <p>How to be an Alpha Male:"The 15 Habits of True Alphas"</p>
                 </div>
-            </div>
-        </section>
+                <div class="col-6 info-section">
+                    <h3>Want to learn how to be an alpha male? How to be more masculine?
+                        How to be the man you've always wanted to be?
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel laudantium hic incidunt tempore.
+                        Distinctio non delectus quas accusamus! Optio quam cumque repellendus. Quas dolorem magnam
+                        facere
+                        dignissimos, cum quis quos?
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque veniam nostrum odio dolore
+                        ratione
+                        dolorum placeat vitae ea vel? Magnam laudantium esse mollitia at doloribus cum ad, error veniam
+                        aut!
+                    </p>
+                </div>
+            </section>
+
+            <!-- about section -->
+
+            <section class='about-jumbotron row'>
+                <div class="col-7 jumbo-video">
+                    <img src="../assets/img/icon-youtube-play.png" alt="icon-youtube-play.png">
+                </div>
+                <div class="col-5 jumbo-quote ps-5 pt-5">
+                    <p>"Every morning you have two choices: continue to sleep with your dreams, or wake up
+                        and chase them."</p>
+                    <img src="../assets/img/home-movation-shape-01.png" alt="home-movation-shape-01.png" class="mb-3">
+                    <h3 class="mb-4">Kaixa Stark</h3>
+                    <h5>WINGMAN</h5>
+                </div>
+            </section>
+
+            <!-- Shop section -->
+
+            <section class="shop-courses">
+                <h6 class="text-center">BEGIN YOUR JOURNEY AT MAXCOACH</h6>
+                <h1 class="text-center mb-3">Latest <span>Online Courses</span></h1>
+                <div class="row">
+                    <div class="col-4" v-for="course in this.store.courses" :key="course.lessons">
+                        <generalCard :image="course.image" :cost="course.cost" :title="course.title"
+                            :sheetPic="course.sheetPic" :lessons="course.lessons" :userPic="course.userPic"
+                            :students="course.students"></generalCard>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center mt-5">
+                    <generalButton>
+                        View all courses
+                        <i class="fa-solid fa-arrow-right ms-1"></i>
+                    </generalButton>
+                </div>
+            </section>
+        </div>
     </main>
+
 </template>
+        
+
 
 
 
@@ -87,11 +102,13 @@ export default {
 @use '../assets/colors.scss' as *;
 
 // generals
+.core-container {
+    @include standard-container;
+    min-height: 1200px;
+}
 
 
 main {
-    @include standard-container;
-    min-height: 1200px;
 
     // social proof section
     .social-proof {
