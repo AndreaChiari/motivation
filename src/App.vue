@@ -1,20 +1,19 @@
 <script>
-import headerApp from './components/headerApp.vue'
-import mainApp from './components/mainApp.vue'
-import footerApp from './components/mainApp.vue'
+import appHeader from './components/appHeader.vue'
+import appMain from './components/appMain.vue'
+import footerApp from './components/footerApp.vue'
 
 
 
 export default {
-    components: { headerApp, mainApp, footerApp }
+    components: { appHeader, appMain, footerApp }
 
 }
 </script>
 <template>
-    <headerApp></headerApp>
-    <mainApp></mainApp>
+    <appHeader></appHeader>
+    <appMain></appMain>
     <footerApp></footerApp>
-
 </template>
 <style>
 

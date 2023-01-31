@@ -4,10 +4,11 @@ export default {
 }
 </script>
 <template>
-    <header class="d-flex justify-content-betwen">
-
-    </header>
-
+    <footer>
+        <div>
+            <p>hello</p>
+        </div>
+    </footer>
 
 </template>
 <style scoped lang="scss">

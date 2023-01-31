@@ -1,7 +1,7 @@
 <script>
 import generalButton from './generalButton.vue'
 export default {
-    name: 'headerApp',
+    name: 'appHeader',
     components: { generalButton },
     data() {
         return {
@@ -16,9 +16,6 @@ export default {
 
         }
     }
-
-
-
 
 }
 </script>
