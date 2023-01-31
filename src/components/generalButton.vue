@@ -20,4 +20,8 @@ button {
     border-radius: 5px;
     color: white;
 }
+
+button:hover {
+    background-color: rgb(63, 58, 100)
+}
 </style>
