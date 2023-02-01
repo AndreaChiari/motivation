@@ -1,18 +1,12 @@
 <script>
 import generalButton from './generalButton.vue'
+import { store } from '../assets/data/store'
 export default {
     name: 'appHeader',
     components: { generalButton },
     data() {
         return {
-            headerNavList: [
-                'Home',
-                'Pages',
-                'Courses',
-                'Features',
-                'Blog',
-                'Shop'
-            ],
+            store
 
         }
     }
@@ -20,12 +14,15 @@ export default {
 }
 </script>
 <template>
+
+    <!-- navbar  -->
+
     <div class="background-header">
         <header>
             <div class="header-navbar d-flex justify-content-between align-items-center">
                 <img src="../assets/img/dark-logo.png" alt="dark-logo.png" class="img-fluid">
                 <ul class="d-flex">
-                    <li v-for="(list, i) in headerNavList" :key="i" class="me-4">{{ list }}
+                    <li v-for="list in this.store.headerNavList" :key="list" class="me-4">{{ list }}
                         <i class="fa-solid fa-chevron-down"></i>
                     </li>
                 </ul>
@@ -36,6 +33,9 @@ export default {
                     <i class="fa-brands fa-linkedin me-4"></i>
                 </div>
             </div>
+
+            <!-- header jumbotron -->
+
             <div class="header-jumbotron pt-5 d-flex">
                 <div class="jumbo-info">
                     <p> I'M WINGMAN</p>

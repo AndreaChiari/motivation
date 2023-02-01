@@ -146,7 +146,6 @@ export default {
             </div>
         </div>
 
-
         <!-- jumbotron main social proof -->
 
         <section class="main-jumbotron row">

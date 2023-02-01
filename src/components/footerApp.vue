@@ -14,6 +14,9 @@ export default {
 </script>
 <template>
     <footer>
+
+        <!-- footer list -->
+
         <div class="standard-container row">
             <div class="col-6 address-list">
                 <h3>
@@ -29,6 +32,9 @@ export default {
                 <footerList :title="item.title" :navFirst="item.navFirst" :navSecond="item.navSecond"
                     :navThird="item.navThird" :navFourth="item.navFourth"></footerList>
             </div>
+
+            <!-- footer brands e copy -->
+
             <div class="brand-icons-footer">
                 <i class="fa-brands fa-facebook me-4"></i>
                 <i class="fa-brands fa-twitter me-4"></i>

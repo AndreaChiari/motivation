@@ -2,6 +2,19 @@ import { reactive } from 'vue';
 
 export const store = reactive({
 
+    // header array
+
+    headerNavList: [
+        'Home',
+        'Pages',
+        'Courses',
+        'Features',
+        'Blog',
+        'Shop'
+    ],
+
+    //main arrays
+
     proofList: [
         {
             value: '1926',
@@ -119,6 +132,9 @@ export const store = reactive({
         },
 
     ],
+
+    //footer arrays
+
     footerList: [
         {
             title: 'Explore',
@@ -143,11 +159,6 @@ export const store = reactive({
 
 
     ],
-
-
-
-
-
 
 })
 

@@ -112,8 +112,4 @@ figure {
     width: auto;
     height: 15px;
 }
-
-.secondTypeCard {
-    figure {}
-}
 </style>
