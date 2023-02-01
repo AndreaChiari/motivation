@@ -13,6 +13,30 @@ export const store = reactive({
         'Shop'
     ],
 
+    /*
+    headerNavList: [
+        {
+            name: "home",
+            href: "www.google.it"
+        },
+        {
+            name: "pages",
+            href: "www.google.it",
+            subnavShow: true | false
+            subnav: [
+                {
+                    name: "page 1",
+                    href: "www.google.it"
+                },
+                {
+                    name: "page 2",
+                    href: "www.google.it"
+                },
+            ]
+        },
+    ]
+    */
+
     //main arrays
 
     proofList: [
