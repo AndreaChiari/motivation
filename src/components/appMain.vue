@@ -159,12 +159,14 @@ export default {
                 <h5 class="mb-3">BLOG UPDATED</h5>
                 <h1>Interesting <span>articles updated </span>daily</h1>
                 <div class="row">
-                    <div class="col-3">
-                        <generalCard></generalCard>
+                    <div class="col-3" v-for="article in this.store.articles">
+                        <generalCard :imageArticle="article.imageArticle" :articleTitle="article.articleTitle"
+                            :infoArticle="article.infoArticle"></generalCard>
                     </div>
-
+                    <h6 class="text-center"> VIEW ALL POSTS</h6>
                 </div>
             </section>
+
 
         </div>
     </main>
@@ -346,6 +348,7 @@ main {
 
             p {
                 font-weight: 500;
+                padding: 10px;
             }
 
             .profession-info {
@@ -370,11 +373,19 @@ main {
     }
 
     //articles section
-
     .articles {
         h1 {
             span {
                 color: $color-green
+            }
+        }
+
+        .row {
+            h6 {
+                margin-top: 40px;
+                color: $color-green;
+                text-decoration: underline;
+                text-underline-position: under;
             }
         }
     }

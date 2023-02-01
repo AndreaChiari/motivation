@@ -90,60 +90,25 @@ export const store = reactive({
     ],
     articles: [
         {
-            image: '/src/assets/img/motivation-course-06-480x298.jpg',
-            cost: '$30.00',
-            title: 'How to be Successful: Create A Growth Mindset For Success',
-            sheetPic: '/src/assets/img/sheet-plastic-solid.svg',
-            lessons: '3 Lessons',
-            userPic: '/src/assets/img/user-regular.svg',
-            students: '50 students'
+            imageArticle: '/src/assets/img/motivation-blog-04-480x325.jpg',
+            articleTitle: 'How to stay true to your Personal Brand',
+            infoArticle: 'When it comes to your business orcareer, you want ...'
         },
         {
-            image: '/src/assets/img/motivation-course-05-480x298.jpg',
-            cost: '$30.00',
-            title: 'How to build Confidence in Your Abilities',
-            sheetPic: '/src/assets/img/sheet-plastic-solid.svg',
-            lessons: '1 Lesson',
-            userPic: '/src/assets/img/user-regular.svg',
-            students: '50 students'
+            imageArticle: '/src/assets/img/motivation-blog-03-480x325.jpg',
+            articleTitle: '5 Vital lessons in 5 years of Freelancing',
+            infoArticle: "Being self-employed and working from home, it's easy to get..."
         },
         {
-            image: '/src/assets/img/motivation-course-04-480x298.jpg',
-            cost: '$20.00',
-            title: 'Productivity Machine - Focus in a Distracted World',
-            sheetPic: '/src/assets/img/sheet-plastic-solid.svg',
-            lessons: '5 Lessons',
-            userPic: '/src/assets/img/user-regular.svg',
-            students: '50 students'
+            imageArticle: '/src/assets/img/motivation-blog-02-480x325.jpg',
+            articleTitle: '11 super useful tips for small-business owners',
+            infoArticle: 'Being a small-business owner poses a ton of challenges ...'
         },
         {
-            image: '/src/assets/img/motivation-course-03-480x298.jpg',
-            cost: '$20.00',
-            title: 'Effective Time Management Mastery - Complete Guide',
-            sheetPic: '/src/assets/img/sheet-plastic-solid.svg',
-            lessons: '18 Lessons',
-            userPic: '/src/assets/img/user-regular.svg',
-            students: '50 students'
+            imageArticle: '/src/assets/img/motivation-blog-01-480x325.jpg',
+            articleTitle: 'How to give yourself grace to start again',
+            infoArticle: 'Forgive yourself for bad habits you may have started or ...'
         },
-        {
-            image: '/src/assets/img/motivation-course-02-480x298.jpg',
-            cost: '$25.00',
-            title: 'Body Language Secrets for Entrepreneurs',
-            sheetPic: '/src/assets/img/sheet-plastic-solid.svg',
-            lessons: '19 Lessons',
-            userPic: '/src/assets/img/user-regular.svg',
-            students: '50 students'
-        },
-        {
-            image: '/src/assets/img/motivation-course-01-480x298.jpg',
-            cost: '$19.99',
-            title: 'Management Skills: The Science of Leadership',
-            sheetPic: '/src/assets/img/sheet-plastic-solid.svg',
-            lessons: '17 Lessons',
-            userPic: '/src/assets/img/user-regular.svg',
-            students: '50 students'
-        },
-
 
     ],
 

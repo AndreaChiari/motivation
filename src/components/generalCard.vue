@@ -11,7 +11,10 @@ export default {
         students: String,
         bookImg: String,
         bookTitle: String,
-        bookPrice: String
+        bookPrice: String,
+        imageArticle: String,
+        articleTitle: String,
+        infoArticle: String,
     }
 
 }
@@ -41,15 +44,15 @@ export default {
     <!-- card tipo 2 -->
 
     <figure>
-        <img src="" alt="">
+        <img :src="imageArticle" alt="" class="second-pic">
     </figure>
     <div class="secondTypeCard">
         <div class="d-flex">
-            <img src="" alt="" class="me-3">
-            <p class="text-secondary"></p>
+            <img src="../assets/img/calendar-regular.svg" alt="calendar-regular.svg" class="me-3 pic-info-second">
+            <p class="text-secondary">May 13, 2020</p>
         </div>
-        <h4 class='mb-3'></h4>
-        <p class="text-secondary"></p>
+        <h4 class='mb-3'>{{ articleTitle }}</h4>
+        <p class="text-secondary"> {{ infoArticle }}</p>
     </div>
 
 
@@ -92,14 +95,23 @@ figure {
 }
 
 // style CSS seconda card
+
+.second-pic {
+    border-radius: 7px;
+
+}
+
 .second-pic-container {
     height: 100px;
     width: 100px;
 }
 
+.pic-info-second {
+    width: auto;
+    height: 15px;
+}
+
 .secondTypeCard {
-    figure {
-        img {}
-    }
+    figure {}
 }
 </style>
