@@ -44,18 +44,12 @@ export default {
         <img src="" alt="">
     </figure>
     <div class="secondTypeCard">
-        <h4 class='mb-3'></h4>
-        <p class="description"></p>
-        <div class="d-flex ">
-            <div class="d-flex align-items-center">
-                <img src="" alt="" class="img-fa me-1">
-                <p class="text-secondary"></p>
-            </div>
-            <div class="d-flex align-items-center">
-                <img src="" class="img-fa me-1" alt="">
-                <p class="text-secondary"></p>
-            </div>
+        <div class="d-flex">
+            <img src="" alt="" class="me-3">
+            <p class="text-secondary"></p>
         </div>
+        <h4 class='mb-3'></h4>
+        <p class="text-secondary"></p>
     </div>
 
 

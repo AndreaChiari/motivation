@@ -151,6 +151,22 @@ export default {
             </div>
             <div class="col-6 jumbo-pic"></div>
         </section>
+        <div class="core-container">
+
+            <!-- articles section -->
+
+            <section class="articles">
+                <h5 class="mb-3">BLOG UPDATED</h5>
+                <h1>Interesting <span>articles updated </span>daily</h1>
+                <div class="row">
+                    <div class="col-3">
+                        <generalCard></generalCard>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
     </main>
 
 </template>
@@ -316,6 +332,7 @@ main {
     // jumbotron real stories
     .main-jumbotron {
         min-height: 500px;
+        margin-bottom: 200px;
 
         .jumbo-info {
             background-image: url(../assets/img/background-pattern-wavify.png);
@@ -349,6 +366,16 @@ main {
             background-size: cover;
 
 
+        }
+    }
+
+    //articles section
+
+    .articles {
+        h1 {
+            span {
+                color: $color-green
+            }
         }
     }
 
