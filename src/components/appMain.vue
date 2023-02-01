@@ -62,7 +62,7 @@ export default {
                 </div>
             </section>
 
-            <!-- Shop section -->
+            <!-- Shop courses section -->
 
             <section class="shop-courses">
                 <h6 class="text-center">BEGIN YOUR JOURNEY AT MAXCOACH</h6>
@@ -74,17 +74,70 @@ export default {
                             :students="course.students"></generalCard>
                     </div>
                 </div>
-                <div class="d-flex justify-content-center mt-5">
+                <div class="d-flex justify-content-center mb-5">
                     <generalButton>
                         View all courses
                         <i class="fa-solid fa-arrow-right ms-1"></i>
                     </generalButton>
                 </div>
             </section>
+
+            <!-- shop book section -->
+            <section class="shop-book row mb-5">
+                <div class="col-6">
+                    <p class="mb-3">BOOK STORE ONLINE</p>
+                    <h1 class="first-title mb-3">Be Alpha With</h1>
+                    <h1 class="mb-3">Wingman's Book</h1>
+                    <ul class="mb-4">
+                        <li class="me-5"><i class="fa-solid fa-check me-2"></i>Help you Understand yourself better</li>
+                        <li class="me-5"><i class="fa-solid fa-check me-2"></i>Revealing mature tips</li>
+                        <li class="me-5"><i class="fa-solid fa-check me-2"></i>Give the right advice</li>
+                        <li class="me-5"><i class="fa-solid fa-check me-2"></i>Fascinating examples of alpha man</li>
+                    </ul>
+                    <generalButton class="mt-3">
+                        Get Free Ebook
+                    </generalButton>
+                </div>
+
+                <!-- pic book section -->
+
+                <div class="col-6 d-flex">
+                    <div class="d-flex justify-content-center align-items-center secondTypeCard">
+                        <div>
+                            <figure class="second-pic-container">
+                                <img src="/src/assets/img/product-book-11-400x400.jpg" alt="" class="img-fluid">
+                            </figure>
+                            <div>
+                                <p class="book-title text-center">Alpha man by Maxcoach</p>
+                                <h4 class='mb-3 text-center book-price'>$29.00</h4>
+                            </div>
+                        </div>
+                        <div>
+                            <figure class="second-pic-container">
+                                <img src="/src/assets/img/product-book-10-400x400.jpg" alt="" class="img-fluid">
+                            </figure>
+                            <div>
+                                <p class="book-title text-center">Real man 4.0 by Maxcoach</p>
+                                <h4 class='mb-3 text-center book-price'>$39.00</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- brands logo intermezzo-->
+
+            <div class="logo-brands row">
+                <div class="col-2">
+
+                </div>
+
+            </div>
         </div>
     </main>
 
 </template>
+
         
 
 
@@ -102,11 +155,24 @@ export default {
 @use '../assets/colors.scss' as *;
 
 // generals
+ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+        margin-bottom: 10px;
+        color: $color-gray
+    }
+}
+
 .core-container {
     @include standard-container;
     min-height: 1200px;
 }
 
+.fa-check {
+    color: $color-green
+}
 
 main {
 
@@ -145,6 +211,7 @@ main {
         }
     }
 
+    // about jumbotron
     .about-jumbotron {
         margin-top: 50px;
         min-height: 500px;
@@ -179,6 +246,7 @@ main {
 
     }
 
+    // shop courses section
     .shop-courses {
         margin-top: 150px;
         min-height: 800px;
@@ -192,6 +260,36 @@ main {
                 color: $color-green;
             }
         }
+    }
+
+    // shop book section
+    .book-title {
+        color: $color-violet;
+        font-weight: 700;
+    }
+
+    .book-price {
+        color: $color-green;
+    }
+
+    .shop-book {
+        min-height: 400px;
+
+        div {
+            h1 {
+                color: $color-green;
+            }
+
+            .first-title {
+                color: $color-violet;
+            }
+        }
+    }
+
+    // logo brands intermezzo
+
+    .logo-brands {
+        height: 200px;
     }
 }
 </style>

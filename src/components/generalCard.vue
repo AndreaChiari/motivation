@@ -8,34 +8,73 @@ export default {
         sheetPic: String,
         lessons: String,
         userPic: String,
-        students: String
+        students: String,
+        bookImg: String,
+        bookTitle: String,
+        bookPrice: String
     }
 
 }
 </script>
 <template>
+
+    <!-- card tipo 1  -->
+
     <figure>
         <img :src="image" alt="">
     </figure>
-    <h4 class='mb-3'>{{ cost }}</h4>
-    <p class="description">{{ title }}</p>
-    <div class="d-flex ">
-        <div class="d-flex align-items-center">
-            <img :src=sheetPic alt="sheet-plastic-solid.svg" class="img-fa me-1">
-            <p class="text-secondary">{{ lessons }}</p>
-        </div>
-        <div class="d-flex align-items-center">
-            <img :src=userPic class="img-fa me-1" alt="">
-            <p class="text-secondary">{{ students }}</p>
+    <div class="firstTypeCard">
+        <h4 class='mb-3'>{{ cost }}</h4>
+        <p class="description">{{ title }}</p>
+        <div class="d-flex ">
+            <div class="d-flex align-items-center">
+                <img :src=sheetPic alt="" class="img-fa me-1">
+                <p class="text-secondary">{{ lessons }}</p>
+            </div>
+            <div class="d-flex align-items-center">
+                <img :src=userPic class="img-fa me-1" alt="">
+                <p class="text-secondary">{{ students }}</p>
+            </div>
         </div>
     </div>
 
+    <!-- card tipo 2 -->
 
+    <figure>
+        <img src="" alt="">
+    </figure>
+    <div class="secondTypeCard">
+        <h4 class='mb-3'></h4>
+        <p class="description"></p>
+        <div class="d-flex ">
+            <div class="d-flex align-items-center">
+                <img src="" alt="" class="img-fa me-1">
+                <p class="text-secondary"></p>
+            </div>
+            <div class="d-flex align-items-center">
+                <img src="" class="img-fa me-1" alt="">
+                <p class="text-secondary"></p>
+            </div>
+        </div>
+    </div>
 
 
 </template>
 <style scoped lang="scss">
 @use '../assets/colors.scss' as *;
+
+
+// style CSS prima card
+.img-fa {
+    height: auto;
+    width: 10px;
+}
+
+.description {
+
+    font-weight: 700;
+    margin-bottom: 20px;
+}
 
 figure {
     img {
@@ -44,23 +83,29 @@ figure {
     }
 }
 
-p {
-    margin-bottom: 0;
-    margin-right: 15px;
+.firstTypeCard {
+    padding: 0px 35px 0px;
+
+    h4 {
+        color: $color-green;
+    }
+
+    p {
+        margin-bottom: 0;
+        margin-right: 15px;
+        color: $color-violet;
+    }
 }
 
-.img-fa {
-    height: auto;
-    width: 10px;
+// style CSS seconda card
+.second-pic-container {
+    height: 100px;
+    width: 100px;
 }
 
-
-.description {
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-h4 {
-    color: $color-green;
+.secondTypeCard {
+    figure {
+        img {}
+    }
 }
 </style>
