@@ -102,8 +102,14 @@ export default {
                 <!-- pic book section -->
 
                 <div class="col-6 d-flex">
-                    <div class="d-flex justify-content-center align-items-center secondTypeCard">
-                        <div>
+                    <div class="d-flex justify-content-center align-items-center bookCard">
+                        <div class="hover-card">
+                            <div class="hover-button-container">
+                                <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                                <div><i class="fa-solid fa-cart-shopping"></i></div>
+                                <div><i class="fa-regular fa-heart"></i></div>
+                                <div><i class="fa-solid fa-chart-simple"></i></div>
+                            </div>
                             <figure class="second-pic-container">
                                 <img src="/src/assets/img/product-book-11-400x400.jpg" alt="" class="img-fluid">
                             </figure>
@@ -112,7 +118,13 @@ export default {
                                 <h4 class='mb-3 text-center book-price'>$29.00</h4>
                             </div>
                         </div>
-                        <div>
+                        <div class="hover-card">
+                            <div class="hover-button-container">
+                                <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                                <div><i class="fa-solid fa-cart-shopping"></i></div>
+                                <div><i class="fa-regular fa-heart"></i></div>
+                                <div><i class="fa-solid fa-chart-simple"></i></div>
+                            </div>
                             <figure class="second-pic-container">
                                 <img src="/src/assets/img/product-book-10-400x400.jpg" alt="" class="img-fluid">
                             </figure>
@@ -307,6 +319,10 @@ main {
     }
 
     // shop book section
+    .bookCard {
+        gap: 10px;
+    }
+
     .book-title {
         color: $color-violet;
         font-weight: 700;
@@ -328,6 +344,39 @@ main {
                 color: $color-violet;
             }
         }
+    }
+
+    // pic book hover
+    .hover-card {
+        position: relative;
+    }
+
+    .hover-button-container {
+        display: none;
+        position: absolute;
+        top: 40px;
+        right: 25px;
+
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        * {
+            font-size: 20px;
+        }
+
+    }
+
+    .hover-card:hover .hover-button-container {
+        display: block;
     }
 
     // logo brands intermezzo
