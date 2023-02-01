@@ -129,7 +129,7 @@ export default {
 
             <div class="logo-brands row">
                 <div class="col-2" v-for="logo in this.store.logos">
-                    <img :src="logo" :alt="logo">
+                    <img :src="logo" :alt="logo" class="logos-img">
                 </div>
 
             </div>
@@ -325,6 +325,10 @@ main {
     }
 
     // logo brands intermezzo
+    .logos-img {
+        filter: grayscale(100%);
+        opacity: 0.5;
+    }
 
     .logo-brands {
         height: 200px;
@@ -386,6 +390,7 @@ main {
                 color: $color-green;
                 text-decoration: underline;
                 text-underline-position: under;
+                cursor: pointer;
             }
         }
     }
