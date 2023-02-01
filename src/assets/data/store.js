@@ -111,6 +111,30 @@ export const store = reactive({
         },
 
     ],
+    footerList: [
+        {
+            title: 'Explore',
+            navFirst: 'Start here',
+            navSecond: 'Blog',
+            navThird: 'About us'
+        },
+        {
+            title: ' ',
+            navFirst: 'Success Story',
+            navSecond: 'Courses',
+            navThird: 'Contact us'
+        },
+        {
+            title: 'Information',
+            navFirst: 'Membership',
+            navSecond: 'Purchase guide',
+            navThird: 'Privacy policy',
+            navFourth: 'Terms of service'
+        },
+
+
+
+    ],
 
 
 

@@ -151,7 +151,7 @@ export default {
             </div>
             <div class="col-6 jumbo-pic"></div>
         </section>
-        <div class="core-container">
+        <div class="secondary-main-container">
 
             <!-- articles section -->
 
@@ -333,6 +333,10 @@ main {
     .logo-brands {
         height: 200px;
         margin-top: 300px;
+    }
+
+    .secondary-main-container {
+        @include standard-container
     }
 
     // jumbotron real stories
