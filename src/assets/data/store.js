@@ -78,7 +78,8 @@ export const store = reactive({
         },
 
 
-    ]
+    ],
+
 })
 
 
