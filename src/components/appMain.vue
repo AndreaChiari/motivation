@@ -68,13 +68,13 @@ export default {
                 <h6 class="text-center">BEGIN YOUR JOURNEY AT MAXCOACH</h6>
                 <h1 class="text-center mb-3">Latest <span>Online Courses</span></h1>
                 <div class="row">
-                    <div class="col-4" v-for="course in this.store.courses" :key="course.lessons">
+                    <div class="col-4 card-course" v-for="course in this.store.courses" :key="course.lessons">
                         <generalCard :image="course.image" :cost="course.cost" :title="course.title"
                             :sheetPic="course.sheetPic" :lessons="course.lessons" :userPic="course.userPic"
                             :students="course.students"></generalCard>
                     </div>
                 </div>
-                <div class="d-flex justify-content-center mb-5">
+                <div class="d-flex justify-content-center mb-5 mt-5">
                     <generalButton>
                         View all courses
                         <i class="fa-solid fa-arrow-right ms-1"></i>
@@ -131,9 +131,9 @@ export default {
                 <div class="col-2" v-for="logo in this.store.logos">
                     <img :src="logo" :alt="logo" class="logos-img">
                 </div>
-
             </div>
         </div>
+
 
         <!-- jumbotron main social proof -->
 
@@ -161,7 +161,8 @@ export default {
                 <div class="row">
                     <div class="col-3" v-for="article in this.store.articles">
                         <generalCard :imageArticle="article.imageArticle" :articleTitle="article.articleTitle"
-                            :infoArticle="article.infoArticle"></generalCard>
+                            :infoArticle="article.infoArticle" :imgCalendar="article.imgCalendar" :date="article.date">
+                        </generalCard>
                     </div>
                     <h6 class="text-center"> VIEW ALL POSTS</h6>
                 </div>
@@ -298,6 +299,11 @@ main {
                 color: $color-green;
             }
         }
+    }
+
+    .card-course:hover {
+        box-shadow: 0px 5px 5px gray;
+        cursor: pointer
     }
 
     // shop book section

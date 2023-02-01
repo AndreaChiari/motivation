@@ -92,22 +92,30 @@ export const store = reactive({
         {
             imageArticle: '/src/assets/img/motivation-blog-04-480x325.jpg',
             articleTitle: 'How to stay true to your Personal Brand',
-            infoArticle: 'When it comes to your business orcareer, you want ...'
+            infoArticle: 'When it comes to your business orcareer, you want ...',
+            imgCalendar: '/src/assets/img/calendar-regular.svg',
+            date: 'May 13, 2020'
         },
         {
             imageArticle: '/src/assets/img/motivation-blog-03-480x325.jpg',
             articleTitle: '5 Vital lessons in 5 years of Freelancing',
-            infoArticle: "Being self-employed and working from home, it's easy to get..."
+            infoArticle: "Being self-employed and working from home, it's easy to get...",
+            imgCalendar: '/src/assets/img/calendar-regular.svg',
+            date: 'May 13, 2020'
         },
         {
             imageArticle: '/src/assets/img/motivation-blog-02-480x325.jpg',
             articleTitle: '11 super useful tips for small-business owners',
-            infoArticle: 'Being a small-business owner poses a ton of challenges ...'
+            infoArticle: 'Being a small-business owner poses a ton of challenges ...',
+            imgCalendar: '/src/assets/img/calendar-regular.svg',
+            date: 'May 13, 2020'
         },
         {
             imageArticle: '/src/assets/img/motivation-blog-01-480x325.jpg',
             articleTitle: 'How to give yourself grace to start again',
-            infoArticle: 'Forgive yourself for bad habits you may have started or ...'
+            infoArticle: 'Forgive yourself for bad habits you may have started or ...',
+            imgCalendar: '/src/assets/img/calendar-regular.svg',
+            date: 'May 13, 2020'
         },
 
     ],

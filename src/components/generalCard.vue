@@ -15,6 +15,8 @@ export default {
         imageArticle: String,
         articleTitle: String,
         infoArticle: String,
+        imgCalendar: String,
+        date: String
     }
 
 }
@@ -48,8 +50,8 @@ export default {
     </figure>
     <div class="secondTypeCard">
         <div class="d-flex">
-            <img src="../assets/img/calendar-regular.svg" alt="calendar-regular.svg" class="me-3 pic-info-second">
-            <p class="text-secondary">May 13, 2020</p>
+            <img :src="imgCalendar" alt="" class="me-3 pic-info-second">
+            <p class="text-secondary">{{ date }}</p>
         </div>
         <h4 class='mb-3'>{{ articleTitle }}</h4>
         <p class="text-secondary"> {{ infoArticle }}</p>
