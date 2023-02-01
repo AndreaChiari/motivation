@@ -128,15 +128,35 @@ export default {
             <!-- brands logo intermezzo-->
 
             <div class="logo-brands row">
-                <div class="col-2">
-
+                <div class="col-2" v-for="logo in this.store.logos">
+                    <img :src="logo" :alt="logo">
                 </div>
 
             </div>
         </div>
+
+        <!-- jumbotron main social proof -->
+
+        <section class="main-jumbotron row">
+            <div class="col-6 jumbo-info d-flex flex-column justify-content-center align-items-center">
+                <h5>REAL STORIES</h5>
+                <p class="text-center mb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium
+                    recusandae
+                    omnis, optio
+                    voluptatibus accusamus facilis alias voluptatem officiis explicabo, vel do
+                    lor molestiae natus ipsa odio necessitatibus sed! Nobis, saepe ipsam?</p>
+                <img src="../assets/img/testimonial-avata-02.jpg" alt="testimonial-avata-02.jpg">
+                <h4>Mina Hollace</h4>
+                <p class="profession-info">/Freelancer</p>
+            </div>
+            <div class="col-6 jumbo-pic"></div>
+        </section>
     </main>
 
 </template>
+            
+
+
 
         
 
@@ -290,6 +310,47 @@ main {
 
     .logo-brands {
         height: 200px;
+        margin-top: 300px;
     }
+
+    // jumbotron real stories
+    .main-jumbotron {
+        min-height: 500px;
+
+        .jumbo-info {
+            background-image: url(../assets/img/background-pattern-wavify.png);
+            background-color: rgb(243, 243, 250);
+            padding: 160px;
+
+            h5 {
+                color: $color-green;
+                margin-bottom: 30px;
+            }
+
+            p {
+                font-weight: 500;
+            }
+
+            .profession-info {
+                color: $color-gray
+            }
+
+            img {
+                border-radius: 50%;
+                width: auto;
+                height: 85px;
+            }
+        }
+
+        .jumbo-pic {
+            background-image: url("../assets/img/home-movation-testimonial-image-768x562.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+
+        }
+    }
+
 }
 </style>

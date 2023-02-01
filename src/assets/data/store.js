@@ -79,6 +79,20 @@ export const store = reactive({
 
 
     ],
+    logos: [
+        '/src/assets/img/client-logo-05-primary.png',
+        '/src/assets/img/client-logo-06-primary.png',
+        '/src/assets/img/client-logo-07-primary.png',
+        '/src/assets/img/client-logo-04-primary.png',
+        '/src/assets/img/client-logo-03-primary.png',
+        '/src/assets/img/client-logo-02-primary.png',
+
+    ]
+
+
+
+
+
 
 })
 
