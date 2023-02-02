@@ -11,7 +11,53 @@ export const store = reactive({
         },
         {
             name: "pages",
-            href: "www.google.it"
+            href: "www.google.it",
+            subNav: [
+                {
+                    menuName: 'Start Here',
+                    href: "www.google.it"
+                },
+                {
+                    menuName: 'Success Story',
+                    href: "www.google.it"
+                },
+                {
+                    menuName: 'About me',
+                    href: "www.google.it"
+                },
+                {
+                    menuName: 'About us 01',
+                    href: "www.google.it"
+                },
+                {
+                    menuName: 'About us 02',
+                    href: "www.google.it"
+                },
+                {
+                    menuName: 'About us 03',
+                    href: "www.google.it"
+                },
+                {
+                    menuName: 'Contact me',
+                    href: "www.google.it"
+                },
+                {
+                    menuName: 'Contact us',
+                    href: "www.google.it"
+                },
+                {
+                    menuName: 'Purchase Guide',
+                    href: "www.google.it"
+                },
+                {
+                    menuName: 'Privacy Policy',
+                    href: "www.google.it"
+                },
+                {
+                    menuName: 'Terms of Service',
+                    href: "www.google.it"
+                },
+            ]
         },
         {
             name: "courses",

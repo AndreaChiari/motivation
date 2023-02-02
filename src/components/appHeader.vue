@@ -34,13 +34,16 @@ export default {
 
                         <!--
                     
-                            list.subnav !=== null
+                            list.subnav !== null
                             <ul v-show="list.showSubnav">
                                 v-for="submenu in list.subnav"
                             </ul>
 
                         -->
                     </li>
+                </ul>
+                <ul class="navMenu">
+
                 </ul>
                 <div class="d-flex header-icons">
                     <i class="fa-brands fa-twitter me-4"></i>
