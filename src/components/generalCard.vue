@@ -25,36 +25,39 @@ export default {
 
     <!-- card tipo 1  -->
 
-    <figure>
-        <img :src="image" alt="">
-    </figure>
-    <div class="firstTypeCard">
-        <h4 class='mb-3'>{{ cost }}</h4>
-        <p class="description">{{ title }}</p>
-        <div class="d-flex ">
-            <div class="d-flex align-items-center">
-                <img :src=sheetPic alt="" class="img-fa me-1">
-                <p class="text-secondary">{{ lessons }}</p>
-            </div>
-            <div class="d-flex align-items-center">
-                <img :src=userPic class="img-fa me-1" alt="">
-                <p class="text-secondary">{{ students }}</p>
+    <div v-if="cost">
+        <figure>
+            <img :src="image" alt="">
+        </figure>
+        <div class="firstTypeCard">
+            <h4 class='mb-3'>{{ cost }}</h4>
+            <p class="description">{{ title }}</p>
+            <div class="d-flex ">
+                <div class="d-flex align-items-center">
+                    <img :src=sheetPic alt="" class="img-fa me-1">
+                    <p class="text-secondary">{{ lessons }}</p>
+                </div>
+                <div class="d-flex align-items-center">
+                    <img :src=userPic class="img-fa me-1" alt="">
+                    <p class="text-secondary">{{ students }}</p>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- card tipo 2 -->
-
-    <figure>
-        <img :src="imageArticle" alt="" class="second-pic">
-    </figure>
-    <div class="secondTypeCard">
-        <div class="d-flex">
-            <img :src="imgCalendar" alt="" class="me-3 pic-info-second">
-            <p class="text-secondary">{{ date }}</p>
+    <div v-if="date">
+        <figure>
+            <img :src="imageArticle" alt="" class="second-pic">
+        </figure>
+        <div class="secondTypeCard">
+            <div class="d-flex">
+                <img :src="imgCalendar" alt="" class="me-3 pic-info-second">
+                <p class="text-secondary">{{ date }}</p>
+            </div>
+            <h4 class='mb-3'>{{ articleTitle }}</h4>
+            <p class="text-secondary"> {{ infoArticle }}</p>
         </div>
-        <h4 class='mb-3'>{{ articleTitle }}</h4>
-        <p class="text-secondary"> {{ infoArticle }}</p>
     </div>
 
 
