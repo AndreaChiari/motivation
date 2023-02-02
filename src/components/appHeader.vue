@@ -22,8 +22,24 @@ export default {
             <div class="header-navbar d-flex justify-content-between align-items-center">
                 <img src="../assets/img/dark-logo.png" alt="dark-logo.png" class="img-fluid">
                 <ul class="d-flex">
-                    <li v-for="list in this.store.headerNavList" :key="list" class="me-4">{{ list }}
+                    <li v-for="list in this.store.headerNavList" :key="list.name" class="me-4">{{ list.name }}
                         <i class="fa-solid fa-chevron-down"></i>
+
+                        <!--
+                            li:hover ul {
+                                display: block;
+                            }
+                            
+                        -->
+
+                        <!--
+                    
+                            list.subnav !=== null
+                            <ul v-show="list.showSubnav">
+                                v-for="submenu in list.subnav"
+                            </ul>
+
+                        -->
                     </li>
                 </ul>
                 <div class="d-flex header-icons">

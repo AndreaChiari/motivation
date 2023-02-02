@@ -5,37 +5,31 @@ export const store = reactive({
     // header array
 
     headerNavList: [
-        'Home',
-        'Pages',
-        'Courses',
-        'Features',
-        'Blog',
-        'Shop'
-    ],
-
-    /*
-    headerNavList: [
         {
             name: "home",
             href: "www.google.it"
         },
         {
             name: "pages",
-            href: "www.google.it",
-            subnavShow: true | false
-            subnav: [
-                {
-                    name: "page 1",
-                    href: "www.google.it"
-                },
-                {
-                    name: "page 2",
-                    href: "www.google.it"
-                },
-            ]
+            href: "www.google.it"
         },
-    ]
-    */
+        {
+            name: "courses",
+            href: "www.google.it"
+        },
+        {
+            name: "Features",
+            href: "www.google.it"
+        },
+        {
+            name: "Blog",
+            href: "www.google.it"
+        },
+        {
+            name: "Shop",
+            href: "www.google.it"
+        },
+    ],
 
     //main arrays
 
