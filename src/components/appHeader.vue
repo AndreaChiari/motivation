@@ -9,9 +9,11 @@ export default {
             store
 
         }
-    }
+    },
 
 }
+
+
 </script>
 <template>
 
@@ -24,22 +26,6 @@ export default {
                 <ul class="d-flex">
                     <li v-for="list in this.store.headerNavList" :key="list.name" class="me-4">{{ list.name }}
                         <i class="fa-solid fa-chevron-down"></i>
-
-                        <!--
-                            li:hover ul {
-                                display: block;
-                            }
-                            
-                        -->
-
-                        <!--
-                    
-                            list.subnav !== null
-                            <ul v-show="list.showSubnav">
-                                v-for="submenu in list.subnav"
-                            </ul>
-
-                        -->
                     </li>
                 </ul>
                 <ul class="navMenu">
